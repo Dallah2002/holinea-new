@@ -21,7 +21,8 @@ if (PHP_VERSION_ID < 80000) {
          * @internal
          */
         final class BinProxyWrapper
-        {sapi_windows_cp_conv
+        {
+            private $handle;
             private $position;
             private $realpath;
 
